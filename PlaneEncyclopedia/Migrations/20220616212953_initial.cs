@@ -183,6 +183,7 @@ namespace PlaneEncyclopedia.Migrations
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
@@ -217,7 +218,8 @@ namespace PlaneEncyclopedia.Migrations
                         name: "FK_PlaneMissilesMapper_Planes_PlaneId",
                         column: x => x.PlaneId,
                         principalTable: "Planes",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(

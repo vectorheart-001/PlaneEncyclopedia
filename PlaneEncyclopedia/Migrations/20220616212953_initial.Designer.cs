@@ -12,7 +12,7 @@ using PlaneEncyclopedia.Data;
 namespace PlaneEncyclopedia.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20220609194600_initial")]
+    [Migration("20220616212953_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -207,6 +207,10 @@ namespace PlaneEncyclopedia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -386,7 +390,7 @@ namespace PlaneEncyclopedia.Migrations
                     b.HasOne("PlaneEncyclopedia.Models.Plane", "Plane")
                         .WithMany("planeMissilesMappers")
                         .HasForeignKey("PlaneId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Missile");

@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PlaneEncyclopedia.Data;
+using PlaneEncyclopedia.Services;
 using PlaneEncyclopedia.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -17,8 +18,11 @@ connectionString = builder.Configuration.GetConnectionString("DefaultConnection"
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
+builder.Services.AddTransient<IMissileService, MissileService>();
+builder.Services.AddTransient<IPlaneService, PlaneService>();
+builder.Services.AddTransient<IPlaneMissilesMapperService, PlaneMissilesMapperService>();
 
-    
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

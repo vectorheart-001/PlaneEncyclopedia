@@ -205,6 +205,10 @@ namespace PlaneEncyclopedia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -384,7 +388,7 @@ namespace PlaneEncyclopedia.Migrations
                     b.HasOne("PlaneEncyclopedia.Models.Plane", "Plane")
                         .WithMany("planeMissilesMappers")
                         .HasForeignKey("PlaneId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Missile");

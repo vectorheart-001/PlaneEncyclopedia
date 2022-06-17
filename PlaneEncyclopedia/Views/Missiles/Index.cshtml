@@ -1,0 +1,50 @@
+﻿@model IEnumerable<PlaneEncyclopedia.Models.Missile>
+@using Microsoft.AspNetCore.Identity
+
+@{
+    ViewData["Title"] = "Index";
+}
+@inject UserManager<User> userManager
+
+<h1>Index</h1>
+
+<p>
+    <a class = "btn btn-danger" asp-action="Create">Create</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            
+            <th>
+                @Html.DisplayNameFor(model => model.ImagePath)
+            </th>
+            
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+               <img style = "width:100px" src="@item.ImagePath" >
+            </td>
+            
+            <td>
+            @if (userManager.GetUserId(User) == item.User.Id)
+            {
+                <a class = "btn btn-light" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                 <a class = "btn btn-danger" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            }
+                <a class = "btn btn-success" asp-action="Details" asp-route-id="@item.Id">Details</a> 
+                
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

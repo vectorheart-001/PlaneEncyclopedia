@@ -25,14 +25,17 @@ namespace PlaneEncyclopedia.Data
             builder.Entity<PlaneMissilesMapper>().HasOne(pm => pm.Missile)
                 .WithMany(pm => pm.planeMissilesMappers)
                 .HasForeignKey(pm => pm.MissileId);
+                
 
             builder.Entity<PlaneMissilesMapper>().HasOne(pm => pm.Plane)
                 .WithMany(pm => pm.planeMissilesMappers)
                 .HasForeignKey(pm => pm.PlaneId)
-                .OnDelete(DeleteBehavior.NoAction);
+                .OnDelete(DeleteBehavior.Restrict);
                 
             base.OnModelCreating(builder);
         }
+
+        public DbSet<PlaneEncyclopedia.Models.PlaneMissilesMapper>? PlaneMissilesMapper { get; set; }
        
     }
 }

@@ -47,6 +47,58 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Missiles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Missiles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Missiles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Missiles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Missiles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWlzc2lsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/PlaneMissilesMappers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVNaXNzaWxlc01hcHBlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/PlaneMissilesMappers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVNaXNzaWxlc01hcHBlcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/PlaneMissilesMappers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVNaXNzaWxlc01hcHBlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Planes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Planes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Planes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Planes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Planes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGxhbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Pepo/Desktop/PlaneEncyclopedia/PlaneEncyclopedia/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
